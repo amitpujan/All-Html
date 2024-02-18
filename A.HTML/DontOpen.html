@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radio Button Example</title>
+  <style>
+    /* Add your styles here if needed */
+  </style>
+</head>
+<body>
+
+  <form>
+    <p>
+        There are two things in the table, one is Cake and another is Dick. <br>
+        You will have to sit on one of them and you will have to take another one in your mouth.
+</p>
+    Choose which one will you sit on??
+    <br>
+    <label>
+      <input type="radio" name="messageOption" value="option1" onchange="showMessage(this.value)"> Cake
+    </label>
+    <br>
+    <label>
+      <input type="radio" name="messageOption" value="option2" onchange="showMessage(this.value)"> Dick
+    </label>
+  </form>
+
+  <div id="messageContainer"></div>
+
+  <script>
+    function showMessage(option) {
+      var messageContainer = document.getElementById('messageContainer');
+      // You can customize the messages based on the selected option
+      switch (option) {
+        case 'option1':
+          messageContainer.innerHTML = 'That means you will take the Dick in your mouth. I knew you were a gay.';
+          break;
+        case 'option2':
+          messageContainer.innerHTML = 'You are 100% a gay.';
+          break;
+        // Add more cases as needed
+        default:
+          messageContainer.innerHTML = '';
+      }
+    }
+  </script>
+
+</body>
+</html>

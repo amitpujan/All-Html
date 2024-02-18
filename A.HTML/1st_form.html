@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <form action="acc.php" >
+        <h1>Your Details</h1>
+
+        <table border="1">
+            <tr>
+                <td>
+       Name: <input type="text">
+    </td>        
+    </tr>
+        </table>
+        <table border="1">
+        <tr>
+            <td>
+        Email:<input type="email" name="email">
+    </td>
+    </tr>
+        </table>
+        <table border="1">
+    <tr>
+        <td>
+        Phone<input type="number" name="phone no" max="10" min="10">
+    </td>
+    </tr>
+        </table>
+        <h1>Delivery address</h1>
+        <table border="1">
+            <tr>
+                <td>
+                    Address: <br>
+                    <textarea name="Address"  cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <td>
+                    Post code: <input type="number" name="postCode">
+                </td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <td>
+                    Country: <input type="text" name="Country">
+                </td>
+            </tr>
+        </table>
+        <h1>Card details</h1>
+        <table border="1">
+            <tr>
+                <td>
+                    Card type: <br>
+                    VISA<input type="radio" name="cardType"> AmEx <input type="radio" name="cardType"> Mastercard <input type="radio" name="cardType">
+
+                </td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <td>
+                    Card number: <input type="number" name="cardNumber">
+                </td>
+            </tr>
+        </table>
+        <table border="1">
+            <tr>
+                <td>
+                    Security  code: <input type="number" name="SecurityCode">
+                </td>
+            </tr>
+        </table>
+        <tablen border="1">
+            <tr>
+                <td>
+                    Name on card: <input type="text" name="NameOnCard">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <input type="submit" value="Buy it">
+    </form>
+</body>
+</html>

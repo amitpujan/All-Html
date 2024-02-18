@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="action.html">
+        <h2>Sample Form</h2>
+        <br>
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" name="Name" id="name">
+        </div>
+        <br>
+
+        <label for="DOB">Date of Birth::</label>
+        <div>
+            <input type="date" name="DOB" id="DOB">
+        </div>
+        <br>
+        <label for="email">Email:</label>
+        <div>
+            <input type="email" name="email" id="email">
+        </div>
+        <br>
+        <label for="pass">Password:</label>
+        <div>
+            <input type="password" name="password" id="pass">
+        </div>
+        <br>
+        Program:
+        <div>
+           BIM <input type="radio" name="program" value="BIM">
+           CSIT<input type="radio" name="program" value="CSIT">
+           BCA<input type="radio" name="program" value="BCASS">
+        </div>
+        <br>
+        Semister:
+        <div>
+            <input type="number" name="semister" max="8" min="1">
+        </div>
+        <br>
+        <label for="about">About Yourself:</label>
+        <div>
+           <textarea name="AboutYourself" id="about" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <label for="file">Attach any file</label>
+        <div>
+            <input type="file" name="fileAttached" id="file">
+        </div>
+        <br>
+        <div>
+            <input type="image" src="pic.jpg" alt="pic not found" width="50%">
+        </div>
+        <br>
+        <label for="satisfy">Satifictation range with out college's education</label>
+        <div>
+            <input type="range" name="satisfyRange" id="satisfy">
+        </div>
+        <br>
+        <input type="reset" value="reset">
+        <input type="submit" value="submit">
+        
+    </form>
+
+
+</body>
+</html>
